@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="./includes/wsi.css" />
+        <title>WSI: Online Services - Confirmation of Incident Report</title>
+
+        <!-- Beginning of Head content -->
+        <style type="text/css">
+            .rptData {
+	            font-family: Verdana, Arial, Helvetica, sans-serif;
+	            font-size: 0.7em;
+	            font-style: normal;
+	            font-weight: bold;
+	            font-variant: normal;
+	            color: #000000;
+	            line-height: 125%;
+                }
+        </style>
+    </head>
+
+    <body>
+        <div  align="left">
+        <h1>Incident Report Confirmation</h1>
+            <p align="left">Your incident report was received. Here is what was submitted:</p>
+            <blockquote>
+             <h2><u>Worker Information</u></h2>
+                 First Name: <span class="rptData">{{spanFirstName}}</span><br/>
+                 Middle Initial: <span  class="rptData">{{spanMI}} </span><br/>
+                 Last Name: <span class="rptData">{{spanLastName}} </span><br/>
+                 Social Security Number: <span class="rptData">{{spanSsn}} </span><br/>
+                 Birthdate: <span class="rptData">{{spanBirthDate}} </span>
+             <br/><h2><u>Injury Information</u></h2>
+                 Date of Injury: <span class="rptData">{{spanDateOfInjury}} </span><br/>
+                 Body Part Injured(s): <span class="rptData">{{spanBodyPartInjured}} </span><br/>
+                 Nature of Injury: <span class="rptData">{{spanNatureOfInjury}}</span><br/>
+                 Describe clearly how the accident occurred: <span class="rptData">{{spanDescriptionOfAccident}}</span>
+             <br/><h2><u>Employer Information</u></h2>
+                Business Name: <span class="rptData">{{spanBusinessName}}</span><br/>
+                This report is submitted by: <span class="rptData">{{spanSubmittedByName}}</span>
+            </blockquote>
+            <p align="left">Submitted Date and Time was: <span class="rptData">{{spanSubmittedDateTime}}</span></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,269 @@
+﻿body {
+}
+
+input.rdo1{
+    margin-left:30px;
+    margin-right:10px;
+    width:15px;
+
+}
+
+td.aspLabel {
+    text-align:right;
+    font-size:1.0em;
+    width:50%;
+    padding-right:1.0em;
+}
+
+td.aspLabel30 {
+    text-align:right;
+    font-size:1.0em;
+    width:30%;
+    padding-right:1.0em;
+}
+
+td.aspTextbox{
+    text-align:left;   
+    font-size:1.0em;
+    padding:0;
+}
+
+.tableSolidBorder {
+      border-style: solid;
+      border-color: gray;
+      border-width: 1px;
+      padding:10px;
+}
+
+.easy-breadcrumb{
+    padding-top:15px;
+    font-size:1.2em;
+    color: #2a479d;
+    font-size:smaller;
+    font-style:italic;
+
+}
+
+.easy-breadcrumb a {
+    text-decoration:none;
+    padding-top:15px;
+    color: #2a479d;
+    font-size:1.2em;
+    font-style:italic;
+    background: transparent;
+
+}
+
+.legend1
+{
+    display: block;
+    font-size: 1.1em;
+}
+
+
+.loud {
+   
+  font-size: 1.2em;
+  font-weight: bold;
+  COLOR: #FF0000;
+}
+
+.notasloud {
+    font-size: 1.0em;
+  COLOR: #FF0000;
+}
+
+.sidebar-header {
+    margin-top:40px;
+    padding-top:40px;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color:#2a479d;
+}
+
+.sidebar-anchor{
+    text-decoration:none;
+    color:#333;
+    background:transparent;
+    
+}
+
+.sidebar-li{
+    
+
+    font-stretch:normal;
+    color:#333;
+    
+
+
+    margin-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+
+
+.sidebar-ul
+{
+
+    list-style-type: none;
+    padding:0px;
+    padding-top:5px;
+    margin:0px;
+}
+
+.test img {
+  border-bottom-color: rgb(42, 71, 157);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(42, 71, 157);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(42, 71, 157);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(42, 71, 157);
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(42, 71, 157);
+  cursor: auto;
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  height: 23.484375px;
+  line-height: 24px;
+  max-width: 100%;
+  width: 249px;
+}
+
+.ndImg div {
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 29px;
+    line-height: 24px;
+    position: relative;
+    top: 0px;
+    /*left: -24px;*/
+}
+
+
+.test3{
+    background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  color: rgb(51, 51, 51);
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  height: 72px;
+  line-height: 24px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 62.515625px;
+  padding-right: 62.515625px;
+  padding-top: 0px;
+  width: 1250.359375px;
+
+}
+
+.test4 img 
+{
+    border-bottom-color: rgb(42, 71, 157);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(42, 71, 157);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(42, 71, 157);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(42, 71, 157);
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(42, 71, 157);
+  cursor: auto;
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  height: 46px;
+  line-height: 24px;
+  max-width: 100%;
+  width: 450px;
+}
+
+.footerAnchor {
+    color:white;
+}
+
+.footerHeader{
+    color:white;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:110%;
+}
+
+.footerText 
+{
+    color:white;
+    background-color: #3f3f41;
+    font-size:1.2em;
+    line-height:1.5;
+}
+
+.Footerwrapper {
+    position: relative;
+    padding-bottom: 210px;
+}
+
+.Footerwrapper .midText
+{
+    position:absolute;
+    bottom:60px;
+    height:100px;
+}
+
+.Footerwrapper .Footerbottom {
+     
+    position: absolute;
+    bottom: 0px;
+    height: 20px;
+    vertical-align:bottom;
+}
+
+.quarter-footer
+{
+    padding-right:9px;
+    color:white;
+    background-color: #3f3f41;
+    float:left;
+    font-size:75%;
+    width:24%;
+    
+}
+
+.footerTabText
+{
+     font-size:1.2em;
+    margin:0;
+}
