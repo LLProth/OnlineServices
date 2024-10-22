@@ -12,7 +12,6 @@ namespace OnlineServices
     protected void Page_Load(object sender, EventArgs e)
     {
 
-
       /////////////////////////////////////////////////
       /// Original error handling code ////////////////
       //if (Request.QueryString["Message"] == null)
@@ -46,7 +45,7 @@ namespace OnlineServices
                   lastEx = Server.GetLastError();
                   MessageStr = MakeErrorMessage(lastEx, errorHandler);
               }
-              catch (Exception ex)
+              catch 
               {
                   lastEx = new ApplicationException("Could not retrieve exeption from Server.GetLastError.");
                   MessageStr = "No Additional Information is Available.";
@@ -91,7 +90,7 @@ namespace OnlineServices
         }
         else if (lastEx.GetType().FullName != "System.Web.HttpUnhandledException")
         {
-            if (Session["showerrors"] == "true")
+            if ((string)Session["showerrors"] == "true")
             {
                 //If the session is set then display a detailed error
                 resultString = string.Format("{0}{1}{2}", resultString, System.Environment.NewLine, lastEx.Message);

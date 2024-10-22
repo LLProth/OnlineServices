@@ -17,7 +17,7 @@ namespace OnlineServices
     {
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
-        private string _antiXsrfTokenValue;
+        //private string _antiXsrfTokenValue;
 
         protected void Page_Init(object sender, EventArgs e)
         {
@@ -130,7 +130,7 @@ namespace OnlineServices
                 // Add the page name to the Breadcrumbs
                 doc.DocumentNode.SelectSingleNode("/html[1]/body[1]/div[1]/div[4]/div[1]/section[1]/div[1]/section[1]/nav[1]/ol[1]/li[2]").InnerHtml = Page.Title;
             }
-            catch (Exception e)
+            catch 
             { }
             txt = doc.DocumentNode.OuterHtml;
 
