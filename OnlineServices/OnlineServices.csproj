@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OnlineServices</RootNamespace>
     <AssemblyName>OnlineServices</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -97,10 +97,6 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="OdpMDataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>K:\DEVELOP\CODE\.NET Assemblies\DbAccess\.net4.5.2\OdpMDataAccess.dll</HintPath>
-    </Reference>
     <Reference Include="reCaptcha, Version=1.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\reCaptcha.AspNet.Mvc.1.2.3.0\lib\net40\reCaptcha.dll</HintPath>
     </Reference>
@@ -152,10 +148,6 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
-    </Reference>
-    <Reference Include="WSI.Utility.Database, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\FileNetApps\FileNetCommitProcesser\FileNetCommitProcesser\bin\Debug\WSI.Utility.Database.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -355,9 +347,17 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OdpMDataAccess\OdpMDataAccess\OdpMDataAccess.csproj">
+      <Project>{2735bcbb-96ae-49b8-ad25-49915490ba31}</Project>
+      <Name>OdpMDataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OnlineServicesModel\OnlineServicesModel.csproj">
       <Project>{774d0fae-8bfd-4075-9256-d9e57b223512}</Project>
       <Name>OnlineServicesModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSI.Utility.Database\WSI.Utility.Database.csproj">
+      <Project>{90856dcb-228b-4a7f-8c71-41ff27cbe763}</Project>
+      <Name>WSI.Utility.Database</Name>
     </ProjectReference>
     <ProjectReference Include="..\WsiWebHelpers\WsiWebHelpers.csproj">
       <Project>{7b1e3cba-f95d-48d9-bd85-a0e43ea48c55}</Project>
@@ -377,7 +377,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>

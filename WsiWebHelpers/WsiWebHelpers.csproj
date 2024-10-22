@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WsiWebHelpers</RootNamespace>
     <AssemblyName>WsiWebHelpers</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
@@ -55,7 +55,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
@@ -170,9 +170,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OdpMDataAccess">
-      <HintPath>..\..\..\FileNetApps\FileNetCommitProcesser\FileNetCommitProcesser\bin\Debug\OdpMDataAccess.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -182,9 +179,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WSI.Utility.Database">
-      <HintPath>..\..\..\FileNetApps\FileNetCommitProcesser\FileNetCommitProcesser\bin\Debug\WSI.Utility.Database.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="emailHelper.cs" />
@@ -204,6 +198,16 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OdpMDataAccess\OdpMDataAccess\OdpMDataAccess.csproj">
+      <Project>{2735bcbb-96ae-49b8-ad25-49915490ba31}</Project>
+      <Name>OdpMDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSI.Utility.Database\WSI.Utility.Database.csproj">
+      <Project>{90856dcb-228b-4a7f-8c71-41ff27cbe763}</Project>
+      <Name>WSI.Utility.Database</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
